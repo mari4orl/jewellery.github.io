@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jewellery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Ювелирные изделия купить онлайн">
+    <meta name="keywords" content="Ювелирные изделия, ожерелья, серьги">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
+
+    <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+    <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2" crossorigin="">
+  </head>
+  <body>
+
+    <section class="modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <h2 class="modal__title">The item was added to your cart</h2>
+        <div class="modal__top">
+          <picture>
+            <source type="image/webp" media="(min-width: 1024px)" srcset="img/necklace-detail-card-desk@1x.webp 1x, img/necklace-detail-card-desk@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/necklace-detail-card-tab@1x.webp 1x, img/necklace-detail-card-tab@2x.webp 2x">
+            <source type="image/webp" srcset="img/necklace-detail-card-mob@1x.webp 1x, img/necklace-detail-card-mob@2x.webp 2x">
+
+            <source media="(min-width: 1024px)" srcset="img/necklace-detail-card-desk@1x.jpg 1x, img/necklace-detail-card-desk@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/necklace-detail-card-tab@1x.jpg 1x, img/necklace-detail-card-tab@2x.jpg 2x">
+            <img class="modal__img" src="img/necklace-detail-card-mob@1x.jpg" srcset="img/necklace-detail-card-mob@2x.jpg 2x" alt="Золотое ожерелье">
+          </picture>
+          <div class="modal__name-container">
+            <h3 class="modal__name">Gold Necklace</h3>
+            <span class="modal__price">$ 115</span>
+          </div>
+          <div class="modal__scale">
+            <button class="modal__add"></button>
+            <span class="modal__number">1</span>
+            <button class="modal__minus"></button>
+          </div>
+        </div>
+        <span class="modal__items">You have 1 item in the cart</span>
+        <span class="modal__total">Cart subtotal: $ 115</span>
+        <div class="modal__btn-container">
+          <a href="catalog.html" class="modal__continue">Continue shopping</a>
+          <a href="#" class="modal__checkout">Checkout</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
